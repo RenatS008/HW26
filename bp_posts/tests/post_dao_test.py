@@ -21,7 +21,6 @@ class TestPostsDAO:
         return post_dao_instance
 
     def test_get_all_posts_type(self, post_dao):
-
         posts = post_dao.get_all_posts()
         assert type(posts) == list, 'Incorrect type for result'
         post = post_dao.get_all_posts()[0]
@@ -35,7 +34,6 @@ class TestPostsDAO:
         check_fields(post)
 
     def test_get_all_posts_type_id(self, post_dao):
-
         posts = post_dao.get_all_posts()
         correct_pk = {1, 2, 3}
         pk = set([post.pk for post in posts])

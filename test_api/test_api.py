@@ -1,5 +1,3 @@
-import pytest
-
 # from bp_api.views import api_blueprint
 from app import app
 

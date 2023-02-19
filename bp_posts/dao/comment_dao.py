@@ -37,5 +37,3 @@ class CommentDAO:
         except (ValueError):
             raise DataCommError('Такого поста нет')
         return comment_post
-
-

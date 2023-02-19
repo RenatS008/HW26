@@ -5,4 +5,14 @@ services:
     build: .
     image: skypro/hosting:latest
     ports:
-      - "80:80"
+      - "80:25000"
+    environment:
+      - DB_PASSWORD=db_password
+      - DB_USER=db_user
+      - DB_NAME=db_name
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=db_password
+      - POSTGRES_USER=db_user
+      - POSTGRES_DB=db_name

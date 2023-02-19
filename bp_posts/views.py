@@ -1,6 +1,7 @@
-from flask import render_template, request, Blueprint
+from flask import render_template, request, Blueprint, jsonify
 from bp_posts.dao.post_dao import PostDAO
 from bp_posts.dao.comment_dao import CommentDAO
+from db import db
 from exception import DataError, DataNameError, DataCommError
 from logger import logger
 
@@ -44,6 +45,7 @@ def bookmarks():
     # return render_template('bookmarks.html')
     return 'Закладки'
 
+
 @posts_blueprint.errorhandler(DataError)
 def data_error(e):
     logger.error("Файл поврежден")
@@ -60,3 +62,5 @@ def data_error(e):
 def data_error(e):
     logger.error("Такого поста нет")
     return "Такого поста нет"
+
+

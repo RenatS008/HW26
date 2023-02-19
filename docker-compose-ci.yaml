@@ -2,6 +2,5 @@ version: '3.3'
 
 services:
   web:
-    image: skypro/hosting:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
-      - "80:80"
+      - "80:25000"

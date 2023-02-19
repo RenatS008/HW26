@@ -2,6 +2,7 @@ import pytest
 
 from bp_posts.dao.comment_dao import CommentDAO
 
+
 class TestCommentDAO:
 
     ###Функция получения комментариев по его pk

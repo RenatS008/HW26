@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/skypro/app
-ExecStart=/home/skypro/app/venv/bin/python -m gunicorn main:app -b 0.0.0.0:8080 -w 4
+ExecStart=/home/skypro/app/venv/bin/python -m gunicorn main:app -b 0.0.0.0:25000 -w 4
 Restart=always
 
 [Install]

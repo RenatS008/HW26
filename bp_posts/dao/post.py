@@ -27,7 +27,3 @@ class Post:
                f'{self.views_count}, ' \
                f'{self.likes_count}' \
                f')'
-
-
-
-
