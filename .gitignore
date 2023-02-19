@@ -1,0 +1,8 @@
+/venv/
+/.pytest_cache/
+.idea/
+__pycache__/
+bp_api/__pycache__/
+bp_posts/__pycache__/
+bp_posts/dao/__pycache__/
+
