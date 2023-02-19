@@ -3,7 +3,7 @@ version: '3.3'
 services:
   web:
     build: .
-    image: skypro/hosting:latest
+    image: renfoox/hw26:v0.0.1
     ports:
       - "80:25000"
     environment:
